@@ -1,0 +1,899 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+html,body{
+	height: 100%;
+}
+
+.clear{clear: both;}
+
+.center{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1300px;
+}
+
+/**header**/
+
+header{
+	padding: 20px 2%;
+	height: 100px;
+}
+
+.logo{
+	width: 150px;
+	height: 60px;
+	float: left;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-image:url('../imagens/logo.jpg');
+}
+
+nav.desktop{
+ float: right;
+ padding: 20px 0;
+}
+
+nav.desktop ul li{
+	float: left;
+	margin-left: 40px;
+	
+}
+nav.desktop ul li{
+	list-style-type: none;
+	font-size: 23px;
+	font-style: italic;
+	
+}
+nav.desktop ul li a{
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+}
+
+nav.mobile{
+	margin-top: 15px;
+	margin-right: 20px;
+	display: none;
+	float: right;
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-image: url('../imagens/cardapio.png');
+	
+}
+nav.mobile ul{
+	z-index: 9999;
+	position: absolute;
+	left: 0;
+	top: 100px;
+	background-color: white;
+	width: 100%;
+	text-align: center;
+	border-bottom: 5px solid orange;
+}
+
+nav.mobile ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+nav.mobile ul li{
+	padding: 10px;
+	font-style: italic;
+	list-style-type: none;
+	font-size: 23px;
+}
+
+
+
+/**baner**/
+
+section.baner-section .banner{
+	width: 100%;
+	height: 800px;
+	background-color: black;
+	background-image: url('../imagens/bg.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.text-banner-single{
+	padding: 100px;
+}
+.banner-single{
+	font-style: italic;
+	margin:15px 0 ;
+	width: 290px;
+	height: 50px;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	background-image: url('../imagens/box-text.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	font-size: 23px;
+}
+
+section.baner-section .banner-single:nth-of-type(2){
+	width: 210px;
+	position: relative;
+	left: -9px;
+	padding: 10px 15px;
+}
+
+section.baner-section .banner-single:nth-of-type(3){
+	width: 110px;
+	position: relative;
+	left: -14px;
+	padding: 10px 15px;
+}
+
+section.baner-section .banner-single:nth-of-type(4){
+	background-image: url('../imagens/box-white-text.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 300px;
+	position: relative;
+	left: -24px;
+	padding: 6px 15px;
+	color: black;
+}
+
+/**Classified-cars**/
+
+section.classified .linha1{
+	width: 100%;
+	border: 2px solid black;
+	position: relative;
+	top: 116px;
+	height: 0;
+}
+
+section.classified .veiculos-destaque{
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	text-align:center;
+	padding: 90px 0;
+}
+
+section.classified .veiculos-destaque h2{
+	padding: 0 30px;
+	position: absolute;
+	font-size: 27px;
+	font-style: italic;
+	background-color: white;
+
+}
+
+div.classified-cars .center{
+	max-width: 1000px;
+	text-align: center;
+}
+
+div.classified-cars .cars-grup {
+	padding: 30px 0;
+}
+
+div.classified-cars .cars-grup .cars-single{
+	width: 33.3%;
+	float: left;
+	display: inline-block;
+	text-align: center;
+}
+
+div.classified-cars .cars-grup .cars-single .cars-alone{
+	width: 100%;
+	padding-top: 100%;
+	background-color: grey;
+	border: 4px solid white;
+	text-align: center;
+	display: inline-block;
+
+}
+
+
+div.classified-cars .cars-grup .cars-single .information-cars {
+	text-align: left;
+}
+
+div.classified-cars .cars-grup .cars-single .information-cars h2{
+	text-transform: uppercase;
+	font-size: 23px;
+	position: relative;
+	top: 0;
+	left: 10px;
+}
+
+div.classified-cars .cars-grup .cars-single .information-cars p{
+
+	font-size: 17px;
+	position: relative;
+	top: 0;
+	left: 10px;
+	margin-bottom: 10px;
+
+}
+
+div.classified-cars .cars-grup .cars-single .information-cars a{
+	font-size: 19px;
+	position: relative;
+	top: 0;
+	left: 10px;
+	display: inline-block;
+	width: 120px;
+	height: 45px;
+	background-color: red;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: white;
+	line-height: center;
+	font-style: italic;
+	border-bottom: 2px solid #ccc;
+	cursor: pointer;
+
+
+
+}
+
+/**Depoimentos**/
+section.depoimentos{
+}
+
+section.depoimentos .all-side{
+	width: 100%;
+	height: 300px;
+}
+
+section.depoimentos .all-side .left-side{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: #1c1c1c;
+
+}
+
+section.depoimentos .all-side .right-side{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: #612f39;
+
+}
+
+section.depoimentos .all-side .left-side .texto-left{
+	max-width: auto;
+	padding: 48px 100px;
+}
+
+section.depoimentos .all-side .left-side .texto-left h2{
+	color: white;
+	font-size: 27px;
+}
+
+section.depoimentos .all-side .left-side .texto-left ul{
+	color: white;
+	margin-left: 15px;
+}
+
+section.depoimentos .all-side .left-side .texto-left a{
+	text-decoration: none;
+	color: white;
+	font-size: 19px;
+	font-style: italic;	
+}
+
+
+section.depoimentos .all-side .right-side .texto-right{
+	max-width: 600px;
+	padding: 40px 30px;
+
+}
+
+section.depoimentos .all-side .right-side .texto-right h2{
+	color: white;
+	font-size: 27px;
+}
+
+section.depoimentos .all-side .right-side .texto-right p{
+	color: white;
+	font-size: 19px;
+	font-style: italic;
+}
+
+/**msg dados**/
+
+section.msg-dados .campo-dados{
+	padding: 40px 0;
+}
+.campo-dados{
+	text-align: center;
+}
+.line2{
+	border: 2px solid black;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 0;
+	position: relative;
+	left: 0;
+	top: 23px;
+}
+
+.texto-msg{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: white;
+	width: 100%;
+	max-width: 398px;
+	display: inline-block;
+}
+
+.texto-msg h2{
+	font-size: 26px;
+
+}
+
+.envio-dados{
+	padding: 30px 0;
+
+}
+
+.envio-dados .center{
+	width: 100%;
+	margin: 0 auto;
+	max-width:400px;
+}
+
+.envio-dados form .w-100 input{
+	width: 100%;
+	padding: 10px 10px;
+	display: inline-block;
+}
+.envio-dados form .w-50{
+	margin-top: 10px;
+	padding: ;
+	float: left;
+	display: inline-block;
+	width: 50%;
+}
+.envio-dados form .w-50 input{
+	width: 100%;
+	padding: 10px 13px;
+}
+
+.envio-dados form .w-100 textarea{
+	margin-top: 10px;
+	display: block;
+	width: 100%;
+	padding: 10px 10px;
+	height: 120px;
+	display: inline-block;
+}
+.sub-input{
+	text-align: center;
+}
+input[type = submit]{
+	margin-top: 10px;
+	display: inline-block;
+	width: 30%;
+	height: 40px;
+	font-size: 20px;
+	color: white;
+	background-color: #612f39 ;
+	border: none;
+	border-bottom: 2px solid #ccc;
+}
+/**Footer**/
+
+footer{
+	padding: 10px 0;
+	background-color:black ;
+	text-align: center;
+}
+footer p{
+	color: white;
+	display: inline-block;
+} 
+
+/**Section Vendas**/
+
+section.vendas{
+	min-height: 88%;
+	padding: 40px 0;
+}
+section.vendas .line2{
+	border: 2px solid black;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	height: 0;
+	position: relative;
+	left: 0;
+	top: 23px;
+}
+
+
+section.vendas .texto-msg{
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: white;
+	width: 100%;
+	max-width: 88px;
+	display: inline-block;
+}
+
+
+
+section.vendas aside{
+	margin-top: 40px;
+	padding: 40px 2%;
+	width: 30%;
+	float: left;
+	display: inline-block;		
+}
+
+section.vendas aside .search1{
+	position: relative;
+	margin-top: 40px;
+	max-width: 300px;
+	height: 26px;
+	border: 4px  solid #ccc;
+	border-radius: 20px;
+}
+
+aside .box-search1 h2{
+	font-size: 26px;
+	font-weight: normal;
+	color: rgb(50, 51, 50);
+
+}
+
+aside .search1 .barra-search{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30%;
+	height:100%;
+	border-radius: 20px;
+	background:linear-gradient(to bottom, rgb(255,255,255), rgb(200, 200, 200));
+
+}
+
+aside .search1 .box-search{
+	position: absolute;
+	left: 27%;
+	top: -5px;
+	width: 14px;
+	height: 30px;
+	background:linear-gradient(to bottom, rgb(255,255,255), rgb(130, 130, 130));
+	border: 2px solid black;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+aside .text-search1{
+	margin-top:10px;
+	max-width: 290px;
+	padding: 0 2%;
+	
+
+}
+
+aside .search2 h2{
+	font-size: 26px;
+	font-weight: normal;
+	color: rgb(50, 51, 50);
+
+}
+aside form .search2-box input[type=checkbox]{
+	display: none;
+}
+
+aside form .search2-box label{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	vertical-align: top;
+	cursor: pointer;
+	position: relative;
+	top: 4px;
+
+}
+
+aside form .search2-box label .circle{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	background-color:rgb(110,110,110);
+	width: 7px;
+	height: 7px;
+	border-radius: 3px;
+	display: none;
+}
+
+/**Revisar o codigo abaixo pq eu ainda n entendi 100%**/
+
+aside form .search2-box input[type=checkbox]:checked + label > .circle{
+	display: block;
+}
+
+section.vendas-produtos{
+	margin-top: 40px;
+	width: 70%;
+	float: left;
+	display: inline-block;
+}
+
+/**Vendas-single**/
+
+section.content-main{
+	min-height: 90vh;
+}
+div.helf-1{
+	width: 60%;
+	float: left;
+	padding: 0 2%;
+	display: inline-block;
+	
+}
+
+.page-guide{
+	position: relative;
+	top: 25px;
+	left: 95px;
+}
+.page-guide a{
+	text-decoration: none;
+	color: black;
+	padding: 0 10px;
+	font-style: italic;
+	font-size: 19px;
+
+}
+
+.buy-cars{
+	margin-top: 30px;
+	margin-left:80px;
+	width: 80%;
+	padding-top:60%;
+	background-color: grey;
+}
+div.img-parent{
+	position: relative;
+	width: 100%;
+	padding: 0 60px;
+}
+div.arrow-parrents1{
+	position: absolute;
+	top: 50%;
+	left: 8px;
+	background-image: url("../imagens/arrow-left.png");
+	background-size: 100% 100%;
+	width: 23px;
+	height: 23px;
+}
+
+div.arrow-parrents2{
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	background-image: url("../imagens/arrow-right.png");
+	background-size: 100% 100%;
+	width: 23px;
+	height: 23px;
+}
+
+nav.img-choices{
+	padding:15px ;
+	margin-top: 15px;
+	width: 100%;
+	overflow: hidden;
+}
+.img-grup{
+	width: 200%;
+}
+
+.mini-img{
+	cursor: pointer;
+	display: inline-block;
+	border: 3px solid white;
+	float: left;
+	padding-top: calc(33.3% * (100 / 200) * 0.4);
+	width: calc(33.3% * (100 / 200));
+	background-color: gray;
+}
+
+div.helf-2{
+	width: 40%;
+	padding: 20px 2%;
+	float: left;
+	display: inline-block;
+	
+}
+div.text-helf-2{
+	padding: 32px 0;
+	max-width: 400px;
+}
+div.text-helf-2 .button a{
+	font-size: 19px;
+	position: relative;
+	top: 20px;
+	left: 0px;
+	display: inline-block;
+	width: 120px;
+	height: 45px;
+	background-color: red;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: white;
+	line-height: center;
+	font-style: italic;
+	border-bottom: 2px solid #ccc;
+	cursor: pointer;
+}
+
+section.content-main .msg-dados{
+	margin-top: 100px;
+}
+
+section.content-main .classified-cars{
+	margin-top: 100px;
+}
+
+section.content-main div.classified-cars .cars-grup .cars-single{
+	width: 33.3%;
+	float: left;
+	display: inline-block;
+	text-align: center;
+}
+
+section.content-main div.classified-cars .cars-grup .cars-single .cars-alone{
+	width: 80%;
+	padding-top: 80%;
+	background-color: grey;
+	border: 4px solid white;
+	text-align: center;
+	display: inline-block;
+
+}
+
+section.content-main div.classified-cars .cars-grup .cars-single .information-cars{
+	position: relative;
+	left: 40px;
+	top: 15px;
+}
+
+section.content-main .texto-msg{
+	text-align: center;
+}
+/**Pagina Sobre**/
+
+section.sobre{
+	min-height: 90vh;
+}
+
+div.img-sobre{
+	margin: 20px ;
+	position: relative;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 65%;
+	padding-top: 40%;
+	display: inline-block;
+	background-color: gray;
+}
+
+div.text-sobre1, div.text-sobre2{
+	padding: 20px 3%;
+}
+
+div.text-sobre1 p, div.text-sobre2 p {
+ font-size: 20px;
+ color: rgb(120,120,120);
+ text-align: justify;
+}
+
+
+
+div.img-sobre2{
+	width: 28%;
+	float: left;
+	padding-top:20%;
+	background-color: grey;
+	display: inline-block;
+}
+
+div.text-waper{
+	padding: 0 20px;
+	margin-bottom:23px;
+	width: 70%;
+	float: left;
+}
+
+
+
+
+
+
+
+
+/**Responsivo**/
+
+@media screen and (max-width: 1400px){
+	section.baner-section .banner{
+	background-size: 90% auto;
+	background-position: right bottom;
+}
+
+}
+
+@media screen and (max-width: 1200px){
+	section.baner-section .banner{
+	height:70vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+section.vendas aside{
+	text-align: center;
+	margin-top: 40px;
+	padding: 40px 0;
+	width: 100%;
+	float: none;
+	display: inline-block;	
+}
+aside .box-search1{
+	display: inline-block;
+	padding: 30px 0;
+}
+
+section.vendas aside .search1{
+	text-align: center;
+}
+
+
+section.vendas aside .search2-box{
+	display: block;
+	padding: 10px 0;
+}
+
+section.vendas aside .box-search2{
+	display: inline-block;
+	padding: 20px 0;
+}
+
+section.vendas aside .one{
+ 	position: relative;
+ 	left: 13px;
+}
+
+
+section.vendas-produtos{
+	text-align: center;
+	margin-top: 40px;
+	width: 100%;
+	float: none;
+	display: inline-block;
+}
+
+section.vendas-produtos .classified-cars .cars-grup{
+	text-align: center;
+}
+
+
+}
+
+@media screen and (max-width: 800px){
+	nav.desktop {
+		display: none;
+	}
+	nav.mobile{
+		display: block;
+	}
+
+
+	.text-banner-single{
+	padding: 40px;
+	}
+	.banner-single{
+		font-size: 18px;
+	}
+
+	div.classified-cars .cars-grup .cars-single{
+	width: 60%;
+	float: none;
+	display: inline-block;
+	text-align: center;
+}
+
+div.classified-cars .cars-grup .cars-single .information-cars {
+	text-align: center;
+	padding: 10px 0;
+}
+
+div.classified-cars .cars-grup .cars-single .information-cars h2{
+	text-transform: uppercase;
+	font-size: 23px;
+	position: relative;
+	top: 0;
+	left: 0px;
+}
+
+div.classified-cars .cars-grup .cars-single .information-cars p{
+
+	font-size: 17px;
+	position: relative;
+	top: 0;
+	left: 0px;
+
+}
+
+div.classified-cars .cars-grup .cars-single .information-cars a{
+	font-size: 17px;
+	position: relative;
+	top: 0;
+	left: 0px;
+
+
+}
+
+section.depoimentos .all-side{
+	width: 100%;
+	height: auto;
+}
+
+section.depoimentos .all-side .left-side{
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	float: none;
+	background-color: #1c1c1c;
+
+}
+
+section.depoimentos .all-side .right-side{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	float: none;
+	background-color: #612f39;
+}
+
+
+section.depoimentos .all-side .left-side .texto-left{
+	padding: 40px 40px;
+}
+
+section.depoimentos .all-side .right-side .texto-right{
+	max-width:auto;
+}
+
+
+
+}
+
+@media screen and (max-width: 500px){
+	div.classified-cars .cars-grup .cars-single{
+	width: 90%;
+	float: none;
+	display: inline-block;
+	text-align: center;
+
+}
